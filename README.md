@@ -51,6 +51,8 @@ O display presente no circuito se comunica através da interface I2C, utilizando
 
 ## :electric_plug: Funcionamento do sistema
 
+<img src="https://github.com/andre-cerca/Pet-virtual/blob/main/video.gif" width="400"/> <br/>
+
 O sistema se baseia principalmente na biblioteca Framebuf, que permite a exibição de imagens no display SSD1306 por meio de arrays contendo a luminosidade de cada pixel da tela. As animações foram feitas através de um site próprio para a criação de pixel arts, e foram convertidas para os arrays.
 
 <br/>
