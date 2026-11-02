@@ -32,30 +32,26 @@ Nosso projeto consiste em uma animação de um jogo no estilo de "bichinho virtu
 
 #### Display SSD1306
 
-O Display SSD1306 nos permite apresentar informações(Especificação técnica: https://randomnerdtutorials.com/esp32-ssd1306-oled-display-arduino-ide/)
+O SSD1306 é um controlador utilizado em displays LED, ele recebe informações do ESP32 por meio da comunicação I2C.
+Os dados são armazenados em uma memória interna, que determina quais pixels devem acender ou apagar, a qual deixa possível exibir textos, números, símbolos e imagens na tela.
+
+(Especificação técnica: https://randomnerdtutorials.com/esp32-ssd1306-oled-display-arduino-ide/).
 
 
 ### Circuito
 
 <p align="center">
 Figura - Diagrama do circuito<br/>
-  <img src="https://github.com/andre-cerca/Pet-virtual/edit/main/Circuito.png" width="400" /><br/>
+  <img src="https://github.com/andre-cerca/Pet-virtual/blob/main/Circuito.png" width="400" /><br/>
 </p>
-Informações importantes sobre o circuito, onde colocá-lo, entre outros.
+O display presente no circuito se comunica através da interface I2C, utilizando os pinos GPIO 21 e 22. Além disso, devido sua simplicidade, ele pode ser portado em qualquer ambiente, mas recomenda-se a adição de uma proteção ao circuito. 
 <br/>
 
 <br/>
 
 ## :electric_plug: Funcionamento do sistema
 
-**Não esqueça: adicione um videozinho do sistema funcionando :)**
-
-Liste informações como:
-- requisitos do código
-- estrutura de arquivos
-- qual o objetivo de cada arquivo/pedaço de código
-Não precisa ser muito detalhado, apenas o suficiente para que seu código seja entendível!
-
+O sistema se baseia principalmente na biblioteca Framebuf, que permite a exibição de imagens no display SSD1306 por meio de arrays contendo a luminosidade de cada pixel da tela. As animações foram feitas através de um site próprio para a criação de pixel arts, e foram convertidas para os arrays.
 
 <br/>
 
@@ -63,11 +59,12 @@ Não precisa ser muito detalhado, apenas o suficiente para que seu código seja 
 
 ### Features implementadas
 
-- [x] Identificação da mudança de posição na cadeira *(exemplo de features que já estão funcionando no projeto)*
+- [x] Animações iniciais do projeto*
 
 
 ### Features para incrementar no projeto
 
-- [ ] Possibilidade do usuário configurar o tempo e a temperatura para os alertas *(exemplo de features que as pessoas podem contribuir no projeto)*
+- [ ] Novas animações*
+- [ ] Sistema de interação com mascote*
 
 
